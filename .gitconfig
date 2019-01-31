@@ -1,0 +1,51 @@
+[user]
+    email = vbonasa@gmail.com
+    name = Víctor Bonasa Soriano
+[alias]
+    s = status -s
+    cl = clone
+    df = diff
+    dfs = diff --staged
+    co = checkout
+    ci = commit
+    cis = commit -a -m
+    aa = add -A
+    unstage = reset HEAD
+    ac = !git add . && git commit -am
+    br = branch -vv --sort=-committerdate
+    fix = commit --amend --no-edit
+    sh = stash
+    pl = pull
+    ps = push
+    lg = !"git l1"
+    l1 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    l2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    l3 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(res$
+    ctags = !.git/hooks/ctags
+[apply]
+    whitespace = nowarn
+[core]
+    editor = vim
+    fileMode = false
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    prompt = false
+[color]
+    branch = auto
+    diff = auto
+    intereactive = auto
+    status = auto
+    ui = auto
+[push]
+    default = simple
+[help]
+    autocorrect = 1
+[github]
+    user = VictorBonasa
+[diff]
+    colorMoved = zebra
+    indentHeuristic = true
+[http]
+    sslverify = false
