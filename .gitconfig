@@ -2,7 +2,8 @@
     email = vbonasa@gmail.com
     name = Víctor Bonasa Soriano
 [alias]
-    s = status -s
+    s = status
+    ss = status -s
     cl = clone
     df = diff
     dfs = diff --staged
